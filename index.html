@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+		
+		<table>
+<!--			för screenreaders kan det vara svårt att se själva tabellen den läser kolumn för kolumn och därför kan <caption> vara bra för då vet man vad själva tabellen handlar om-->
+			<caption>Nackademins Elit</caption>
+			<thead>
+<!--		som listor, så behöver table en wraper runt om själva tabellen. Har inga attribut som man kan använda, bara globala attribut som class och id-->
+<!--			<tr> står för table row-->
+				<tr>
+<!--			<th> står för table header och är rubriken i tabellen. scope är en attribut som säger att dessa är kolumener-->
+					<th scope="col"> Namn	</th>
+					<th scope="col"> Email</th>
+					<th scope="col"> Skills</th>
+
+				</tr>
+			</thead>
+			
+<!--i tfoot så lägger man tex copyright text. Hur ofta man uppdaterar info osv-->
+			<tfoot>
+				<tr>
+<!--				ofta så ska man ha lika många columner och rader, därför kan man använda <rowspan> och <colspan> och sen så skriver man hur många kolumner som det egentligen ska finnas. om man inte använder colspan så kommer texten trycka ut andra kolumners storlek -->
+					<td colspan="3">Datan i tabellen är ett utdrag från nackademins elit</td>
+				</tr>
+			</tfoot>
+
+
+<!--i tbody så lägger man innehållet-->			
+			<tbody>
+				<tr>
+<!--		scope säger att det är en rad och inte en kolum som scope ovan-->
+<!--		<td> står för table data och är columnen i tabellen allt innehåll måste vara inne i <td>-->
+<!--		upp till en själv om man vill att det ska vara <th> eller <td>-->
+					<th scope="row"> Arvid</th>
+					<td> appe@gmail.com</td>
+					<td> Javascript ninja</td>
+				</tr>
+			
+				<tr>
+					<th scope="row"> Alina</th>
+					<td> ali@gmail.com</td>
+					<td> CSS guru</td>
+				</tr>
+
+				<tr>
+					<th scope="row"> Ivar</th>
+					<td> ravi@gmail.com</td>
+					<td> HTML hacker</td>
+				</tr>
+			</tbody>
+
+			
+		
+			
+		</table>
+
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
